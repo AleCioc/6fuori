@@ -60,7 +60,9 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 components.iframe(
-    "data:application/pdf;base64,{base64_pdf}",
+    "https://storage.googleapis.com/6fuori_telegram_data/lyrics_with_chords/{}".format(
+        "lyrics_with_chords/{} - testo e accordi.pdf".format(selected_song).replace(" ", "%20")
+    ),
     width=1050,
     height=1000,
     scrolling=True
