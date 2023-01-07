@@ -50,20 +50,20 @@ base64_pdf = base64.b64encode(
     )
 ).decode('utf-8')
 
-# pdf_display = F"""
-#     <iframe src="data:application/pdf;base64,{base64_pdf}" width="1000" height="1000" type="application/pdf"></iframe>
-# """
-#
-# st.markdown(pdf_display, unsafe_allow_html=True)
+pdf_display = F"""
+    <iframe src="data:application/pdf;base64,{base64_pdf}" width="1000" height="1000" type="application/pdf"></iframe>
+"""
+
+st.markdown(pdf_display, unsafe_allow_html=True)
 
 import streamlit as st
 import streamlit.components.v1 as components
 
-components.iframe(
-    "https://storage.googleapis.com/6fuori_telegram_data/lyrics_with_chords/{}".format(
-        "lyrics_with_chords/{} - testo e accordi.pdf".format(selected_song).replace(" ", "%20")
-    ),
-    width=1050,
-    height=1000,
-    scrolling=True
-)
+# components.iframe(
+#     "https://storage.googleapis.com/6fuori_telegram_data/lyrics_with_chords/{}".format(
+#         "{} - testo e accordi.pdf".format(selected_song)
+#     ),
+#     width=1050,
+#     height=1000,
+#     scrolling=True
+# )
