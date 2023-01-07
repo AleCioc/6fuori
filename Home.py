@@ -1,6 +1,6 @@
 import os
 import streamlit as st
-from streamlit_utils.streamlit_utils import load_cover_image
+from utils.streamlit_utils import load_cover_image
 
 st.set_page_config(layout="wide")
 

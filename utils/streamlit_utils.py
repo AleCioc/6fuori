@@ -1,11 +1,17 @@
 import base64
 import streamlit as st
 from PIL import Image
+from utils.google_cloud_utils import read_from_google_bucket
 
 
 @st.experimental_memo()
 def load_cover_image():
-    image = Image.open('telegram_api_data/images/6fuori_copertina.png')
+
+    file_from_bucket = read_from_google_bucket(
+        "telegram_api_data/images/6fuori_copertina.png"
+    )
+
+    image = Image.open(file_from_bucket)
     return image
 
 
