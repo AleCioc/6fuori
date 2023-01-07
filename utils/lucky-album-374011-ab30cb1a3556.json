@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "lucky-album-374011",
+  "private_key_id": "ab30cb1a3556b63a57ace23a465651853f57a807",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCSHUq2EbwIoFWH\nep10NDINCA0Kx1as40da0afz6k6Wlixz4sNFZwLrJ7nt5FbmW9jAs/6pmA/oIxBG\ndp41usU/nm8MCnqJ9PCh3ezMbDfRFdN+FEt+BjZ9K0RrVpAaAHneHJC32fGxIIAx\niFRdtYEvLTF2r/cIoqGXSCwae4tAKZcgWxranurBbFS3ktULoCSj+jRl1bAxsEvz\nQinWut2r+5pEh4PZrxe9O4ZuPYV7XfmxDoamg9LAauJxJFyoIDteCx8tY/wY0eyK\nQGlo6Nm6PXskiLNinkwJ/VDVPSmn9fpl3CW48nnMg10f5jaNoEhVOUfLj0A3yJyw\nnFDj8KjLAgMBAAECggEAKe/SU7N/XpJ2Oe5NZt7cRrU62Q8hp3mML1rhc7aaW8o6\ndABvv2mzgr7iNI9HCdLuwVBoFVEZr6zwrOi6u/0hRAM7KB+R0CrHLg4+OuYMlyxG\niXdVu5QY65ARkSVFMtFUKRXVy474Obh0UsMoQ8UmkN3Nxpz2sDnNW1hRoEA5VW6r\nad8/fEfhpGVcAbNOJwoZo+gKC3hQO5crlfTwk/jBwUaieIPxJayNBmf2DyyFzWuQ\nCYFiuQA/fnrtQXxungZpbRZcJYqwEXIet5vI1yLaMBsy7JUczW7QHS6T3in6dkKi\nFkSLIHWJgzaIT4mymbAGZHLT9etGpTX6EPowCYAqIQKBgQDHLpoOQl8LaLaawkh7\ncLatlEzcFLsQNU5ZpR98m6qHUekrhJqneFLGzLa764J17J9lwBXxwiGE8g3myE2z\nB6SzE2vvTzzjtIrG1zisyezbSLwpu/vHvb3LLFRZ5P2/XlA9BZ9UX8zR02+c1dsQ\nmXp2mp81VgAXecJygmMfog2mkwKBgQC7y2SJ5I33Z6PIgZbkuDlYYnvAaT4tgG7O\nK2VpahTAJ2JFYzW0e04SIYcZL93Ojtyps9EHSmq8Odj4xMUhvZfuC4egEXNCzEgE\nHTT4OCcsYIBS9n//41Lp0xbj3+sGqSxV9OAB3fgzKeGXimP2vHKvq7ktsiIVKi+o\nP6P2AS7f6QKBgBK8oodW3QQAvLTAM/tQtg6MFdLaLGKw8Qbjzpt1NUx3exy546Z/\nXiIPXd09oU8gjDoRIL9WSLrt3jroes6tmGO0HwIrDQpKkId19YHjmOFj7Tdr1JqM\nkc8MA39VWD1pTNkAr2VLgcP3RNeXEn10Qp3nm7Rzu5x5ur304Ag4wVn7AoGAJQB5\nadYXxuSr18j4404NNoYJHitebfa9XnAchj25ovbfnQ5kOZCGHHpwtRzCVn29qs5c\nZFRcXYQEZVfYA8LomaW57mchz8qScgUTN8lQpqTJBA+/vrqazqmh+/pVw7U3oCQk\nsxl6WxJoecRx197ftg9e6EsN/h+Wzk7jzogDJWkCgYEAm1TRiKHolSLf7pjX35st\n8maLJ8W8O+mkSiV3ZnzgE5qzz3fnIQbpLLMcQcK/NmnEh6Rl6ufHugIi9VY02Dxm\nrEhKTJxcPSqc6hZGiXu2mMHnKqzlPDNPsGdC8NYmr37UKwkixuSwrc7a1TfHGFaD\nbsgS/7FRdxeU8mX5PFr/f4A=\n-----END PRIVATE KEY-----\n",
+  "client_email": "id-fuori-test-0@lucky-album-374011.iam.gserviceaccount.com",
+  "client_id": "108264782021260704744",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/id-fuori-test-0%40lucky-album-374011.iam.gserviceaccount.com"
+}
