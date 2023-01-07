@@ -43,27 +43,40 @@ st.text("")
 
 st.subheader("{} - testo e accordi".format(selected_song))
 
-base64_pdf = base64.b64encode(
-    read_from_google_bucket(
-        "lyrics_with_chords/{} - testo e accordi.pdf".format(selected_song),
+cols_tuple = tuple(
+    [1 for i in range(len(list_bucket_folder("lyrics_with_chords_png/{} - testo e accordi".format(selected_song))))]
+)
+st_cols = st.columns(cols_tuple)
+i = 0
+for f in list_bucket_folder("lyrics_with_chords_png/{} - testo e accordi".format(selected_song)):
+    lyrics_with_chords_image = read_from_google_bucket(
+        "lyrics_with_chords_png/{} - testo e accordi/{}".format(selected_song, f.split("/")[-1]),
         mode="bytes"
     )
-).decode('utf-8')
+    st_cols[i].image(lyrics_with_chords_image, use_column_width=True)
+    i += 1
 
-pdf_display = F"""
-    <iframe src="data:application/pdf;base64,{base64_pdf}" width="1000" height="1000" type="application/pdf"></iframe>
-"""
-
-st.markdown(pdf_display, unsafe_allow_html=True)
-
-import streamlit as st
-import streamlit.components.v1 as components
-
-# components.iframe(
-#     "https://storage.googleapis.com/6fuori_telegram_data/lyrics_with_chords/{}".format(
-#         "{} - testo e accordi.pdf".format(selected_song)
-#     ),
-#     width=1050,
-#     height=1000,
-#     scrolling=True
-# )
+# base64_pdf = base64.b64encode(
+#     read_from_google_bucket(
+#         "lyrics_with_chords/{} - testo e accordi.pdf".format(selected_song),
+#         mode="bytes"
+#     )
+# ).decode('utf-8')
+#
+# pdf_display = F"""
+#     <iframe src="data:application/pdf;base64,{base64_pdf}" width="1000" height="1000" type="application/pdf"></iframe>
+# """
+#
+# st.markdown(pdf_display, unsafe_allow_html=True)
+#
+# import streamlit as st
+# import streamlit.components.v1 as components
+#
+# # components.iframe(
+# #     "https://storage.googleapis.com/6fuori_telegram_data/lyrics_with_chords/{}".format(
+# #         "{} - testo e accordi.pdf".format(selected_song)
+# #     ),
+# #     width=1050,
+# #     height=1000,
+# #     scrolling=True
+# # )
