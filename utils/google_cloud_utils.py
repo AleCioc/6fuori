@@ -21,7 +21,7 @@ def read_from_google_bucket(blob_name, mode="string_to_bytes_io"):
 def list_bucket_folder(bucket_folder_path):
 
     storage_client = storage.Client.from_service_account_json(
-        os.path.join(os.path.dirname(__file__), "lucky-album-374011-ab30cb1a3556.json")
+        os.path.join('.', "lucky-album-374011-ab30cb1a3556.json")
     )
     blobs_name_list = list()
     for blob in storage_client.list_blobs(
